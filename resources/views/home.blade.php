@@ -10,10 +10,10 @@
     <header>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/members">Member</a></li>
-            <li><a href="/mission">Our Mission</a></li>
-            <li><a href="/contact_us">Contact Us</a></li>
-            <li><a href="/sign_in">Sign in</a></li>
+            <li><a href="{{route('members')}}">Member</a></li>
+            <li><a href="{{route('mission')}}">Our Mission</a></li>
+            <li><a href="{{route('contact_us')}}">Contact Us</a></li>
+            <li><a href="{{route('sign_in')}}">Sign in</a></li>
 
         </ul>
     </header>

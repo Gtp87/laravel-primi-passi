@@ -31,16 +31,16 @@ Route::get('/members', function () {
         'name' => ['Black Widow', 'Dr Strange', 'Thor', 'Cap\'n America']
     ];
     return view('members', $members);
-});
+})->name('members');
 
 Route::get('/mission', function () {
     return view('mission');
-});
+})->name('mission');
 
 Route::get('/contact_us', function () {
     return view('contact_us');
-});
+})->name('contact_us');
 
 Route::get('/sign_in', function () {
     return view('sign_in');
-});
+})->name('sign_in');
