@@ -18,5 +18,29 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'name' => 'Tony',
+        'lastname' => 'Stark',
+    ];
+    return view('home', $data);
+});
+
+
+Route::get('/members', function () {
+    $members = [
+        'name' => ['Black Widow', 'Dr Strange', 'Thor', 'Cap\'n America']
+    ];
+    return view('members', $members);
+});
+
+Route::get('/mission', function () {
+    return view('mission');
+});
+
+Route::get('/contact_us', function () {
+    return view('contact_us');
+});
+
+Route::get('/sign_in', function () {
+    return view('sign_in');
 });
